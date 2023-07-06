@@ -19,7 +19,6 @@ const App = () => {
                     <NavBar/>
                 </div>
                 <div className='main'>
-                    <Layout>
                         <Routes>
                             <Route index element={<Homepage/>}/>
                             <Route path='/cryptocurrencies' element={<Cryptocurrencies/>}/>
@@ -27,9 +26,6 @@ const App = () => {
                             <Route path='/news' element={<News/>}/>
                             <Route path='/crypto/:coinId' element={<CryptoDetails/>}/>
                         </Routes>
-                    </Layout>
-
-
                     <div className='footer' style={{textAlign: 'center'}}>
                         <Typography.Title level={3} style={{color: "white"}}>
                             Crypto-place <br/>
